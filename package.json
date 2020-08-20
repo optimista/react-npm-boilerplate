@@ -1,0 +1,25 @@
+{
+  "name": "react-npm-boilerplate",
+  "version": "0.0.1",
+  "description": "Another boilerplate for creating react npm libraries. This one with a minimal touch.",
+  "license": "ISC",
+  "main": "dist/index.js",
+  "module": "dist/index.es.js",
+  "devDependencies": {
+    "@babel/core": "^7.10.2",
+    "@babel/preset-env": "^7.10.2",
+    "@babel/preset-react": "^7.10.4",
+    "@rollup/plugin-babel": "^5.2.0",
+    "@rollup/plugin-commonjs": "^15.0.0",
+    "@rollup/plugin-node-resolve": "^9.0.0",
+    "rollup": "^2.13.1",
+    "rollup-plugin-peer-deps-external": "^2.2.3"
+  },
+  "peerDependencies": {
+    "react": "^16.13.1"
+  },
+  "scripts": {
+    "build": "rollup -c",
+    "prepare": "npm run build"
+  }
+}
